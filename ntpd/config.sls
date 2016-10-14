@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 # vim: ft=sls
 
-{% from "template/map.jinja" import template with context %}
+{% from "ntpd/map.jinja" import ntpd with context %}
 
-template-config:
+ntpd-config:
   file.managed:
-    - name: {{ template.config }}
-    - source: salt://template/files/example.tmpl
+    - name: {{ ntpd.config }}
+    - source: salt://ntpd/files/ntp.conf
     - mode: 644
     - user: root
     - group: root

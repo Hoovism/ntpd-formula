@@ -3,5 +3,5 @@
 
 include:
   - ntpd.install
-#  - ntpd.config
+  - ntpd.config
   - ntpd.service
