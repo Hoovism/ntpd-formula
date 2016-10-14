@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # vim: ft=sls
 
-{% from "template/map.jinja" import template with context %}
+{% from "ntpd/map.jinja" import ntpd with context %}
 
-template-pkg:
+ntpd-pkg:
   pkg.installed:
-    - name: {{ template.pkg }}
+    - name: {{ ntpd.pkg }}

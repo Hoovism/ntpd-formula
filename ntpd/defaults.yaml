@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # vim: ft=yaml
-template:
-  pkg: template
-  config: '/etc/template'
+ntpd:
+  pkg: ntpd
+  config: '/etc/ntp.conf'
   service:
-    name: template
+    name: ntpd

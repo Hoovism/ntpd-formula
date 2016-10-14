@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 # vim: ft=sls
 
-{% from "template/map.jinja" import template with context %}
+{% from "ntpd/map.jinja" import ntpd with context %}
 
-template-name:
+ntpd-name:
   service.running:
-    - name: {{ template.service.name }}
+    - name: {{ ntpd.service.name }}
     - enable: True
