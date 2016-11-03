@@ -7,3 +7,5 @@ ntpd-name:
   service.running:
     - name: {{ ntpd.service.name }}
     - enable: True
+    - watch:
+      - file: {{ ntpd.config }}
